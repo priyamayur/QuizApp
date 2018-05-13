@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+    <RelativeLayout xmlns:tools="http://schemas.android.com/tools"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:id="@+id/rel_view"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    >
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:alpha="0.7"
+        android:scaleType="fitXY"
+        android:src="@drawable/map"
+        />
+    <ScrollView
+        android:id="@+id/scroll_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <RelativeLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+
+        <ProgressBar
+            android:id="@+id/progress_bar"
+            style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:indeterminate="false"
+            android:max="10"
+            android:progress="1"
+
+             />
+
+
+        <TextView
+            android:id="@+id/title_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/progress_bar"
+            android:layout_margin="@dimen/width16"
+
+            android:fontFamily="@font/julee"
+            android:text="@string/question1"
+            android:textAppearance="?android:textAppearanceLarge"
+            android:textColor="@color/colorPink"
+            android:textStyle="bold" />
+
+
+        <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/card_view"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/width17"
+            android:layout_below="@id/title_text_view"
+            card_view:cardCornerRadius="@dimen/width18"
+            android:layout_margin="@dimen/width12">
+
+
+        <ImageView
+            android:id="@+id/image"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY"
+            android:src="@drawable/machu_pichu"
+            />
+        </android.support.v7.widget.CardView>
+
+
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/hint_button"
+            android:layout_width="@dimen/width19"
+            android:layout_height="@dimen/width19"
+            android:layout_alignParentTop="true"
+            android:layout_margin="@dimen/width18"
+            android:layout_alignParentRight="true"
+            android:onClick="onHintClicked"
+            android:src="@drawable/hint" />
+
+        <EditText
+            android:id="@+id/edit_text"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/card_view"
+            android:layout_margin="@dimen/width12"
+            android:fontFamily="sans-serif-smallcaps"
+            android:hint="@string/option_hint"
+            android:inputType="textMultiLine"
+            android:textColor="@color/colorChocolate"
+            android:visibility="gone" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:id="@+id/checkbox"
+            android:layout_below="@id/card_view"
+            android:visibility="gone"
+            android:fontFamily="@font/julee">
+
+            <CheckBox
+                android:id="@+id/checkbox1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-smallcaps"
+                android:onClick="onCheckBoxClicked"
+                android:text="@string/option51"
+                android:textAppearance="?android:textAppearanceMedium"
+                android:textColor="@color/colorChocolate"
+                android:textStyle="bold" />
+
+            <CheckBox
+                android:id="@+id/checkbox2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-smallcaps"
+                android:onClick="onCheckBoxClicked"
+                android:text="@string/option52"
+                android:textAppearance="?android:textAppearanceMedium"
+                android:textColor="@color/colorChocolate"
+                android:textStyle="bold" />
+
+            <CheckBox
+                android:id="@+id/checkbox3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-smallcaps"
+                android:onClick="onCheckBoxClicked"
+                android:text="@string/option53"
+                android:textAppearance="?android:textAppearanceMedium"
+                android:textColor="@color/colorChocolate"
+                android:textStyle="bold" />
+
+            <CheckBox
+                android:id="@+id/checkbox4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-smallcaps"
+                android:onClick="onCheckBoxClicked"
+                android:text="@string/option54"
+                android:textAppearance="?android:textAppearanceMedium"
+                android:textColor="@color/colorChocolate"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <RadioGroup
+            android:id="@+id/option_group"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/card_view"
+            android:layout_margin="@dimen/width16"
+            android:fontFamily="sans-serif-smallcaps"
+            android:orientation="vertical"
+
+            >
+
+            <RadioButton
+                android:id="@+id/option1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-smallcaps"
+                android:onClick="onRadioButtonClicked"
+                android:text="@string/option11"
+                android:textAppearance="?android:textAppearanceMedium"
+                android:textColor="@color/colorChocolate"
+                android:textStyle="bold" />
+
+            <RadioButton
+                android:id="@+id/option2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-smallcaps"
+                android:onClick="onRadioButtonClicked"
+                android:text="@string/option12"
+                android:textAppearance="?android:textAppearanceMedium"
+                android:textColor="@color/colorChocolate"
+                android:textStyle="bold" />
+
+            <RadioButton
+                android:id="@+id/option3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-smallcaps"
+                android:onClick="onRadioButtonClicked"
+                android:text="@string/option13"
+                android:textAppearance="?android:textAppearanceMedium"
+                android:textColor="@color/colorChocolate"
+                android:textStyle="bold" />
+            <RadioButton
+                android:id="@+id/option4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-smallcaps"
+                android:onClick="onRadioButtonClicked"
+                android:text="@string/option14"
+                android:textAppearance="?android:textAppearanceMedium"
+                android:textColor="@color/colorChocolate"
+                android:textStyle="bold" />
+
+        </RadioGroup>
+
+
+    </RelativeLayout>
+
+
+
+    </ScrollView>
+
+
+    <TextView
+    android:id="@+id/hint_text"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="@string/hint1"
+    android:visibility="gone"
+    android:textStyle="bold"
+    android:layout_above="@id/next_button"
+    android:layout_margin="@dimen/width16"
+    android:fontFamily="sans-serif-smallcaps"
+    android:textColor="@color/colorYellow"/>
+
+
+        <Button
+            android:id="@+id/previous_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/previous"
+            android:textColor="@color/colorWhite"
+            android:layout_margin="@dimen/width16"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:background="@drawable/button"
+            android:onClick="onPreviousButtonClicked"/>
+
+        <Button
+            android:id="@+id/next_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/next"
+            android:textColor="@color/colorWhite"
+            android:layout_margin="@dimen/width16"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/button"
+            android:onClick="onNextButtonClicked"/>
+    <Button
+        android:id="@+id/submit_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/submit"
+        android:textColor="@color/colorWhite"
+        android:layout_margin="@dimen/width16"
+        android:background="@drawable/button"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+       />
+
+
+</RelativeLayout>

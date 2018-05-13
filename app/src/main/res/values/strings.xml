@@ -1,0 +1,98 @@
+<resources>
+    <string name="topic">Do You Know Your World?</string>
+    <string name="name">Enter your Name</string>
+    <string name="name_hint">Eg. Alex</string>
+    <string name="correct_Hint">Correct answer: +2  \nHint: -1</string>
+    <string name="option_hint">Eg. India</string>
+    <string name="start">START</string>
+    <string name="previous">previous</string>
+    <string name="next">next</string>
+    <string name="submit">submit</string>
+    <string name="result">RESULTS</string>
+    <string name="marks">80</string>
+    <string name="your_score">Your Score is :</string>
+    <string name="comment">Thank you for participating</string>
+
+    <string name="app_name">Quiz</string>
+    <string name="question1">Identify the Geographic Location</string>
+    <string name="question2">Identify the Sea</string>
+    <string name="question3">Identify the deepest part of an \nOcean</string>
+    <string name="question4">Identify the Smallest Country</string>
+    <string name="question5">Identify the facts true to this city-Istanbul</string>
+    <string name="question6">Identify the Location of this \nfamous cause-way</string>
+    <string name="question7">Identify the Deepest River</string>
+    <string name="question8">Identify the Name of the hills</string>
+    <string name="question9">Identify the Location</string>
+    <string name="question10">Identify the cold desert</string>
+
+
+    <string name="answer1">Machu Pichu</string>
+    <string name="answer2">Dead Sea</string>
+    <string name="answer3">Mariana Trench</string>
+    <string name="answer4">Vatican City</string>
+    <string name="answer51">It is located over two continents</string>
+    <string name="answer52">It is surrounded by Sea</string>
+    <string name="answer6">Ireland</string>
+    <string name="answer7">Congo River</string>
+    <string name="answer8">Chocolate Hills</string>
+    <string name="answer9">Indus Valley</string>
+    <string name="answer10">Antarctic Dessert</string>
+
+    <string name="hint1">One of the seven wonders</string>
+    <string name="hint2">lowest land point of earth</string>
+    <string name="hint3">Lowest point called Challenger deep</string>
+    <string name="hint4">It is home to art and architecture</string>
+    <string name="hint5">Major city in Turkey across Bosphorus Strait</string>
+    <string name="hint6">Located in NorthWestern Europe</string>
+    <string name="hint7">Formally called Zaire river</string>
+    <string name="hint8">Located in Philippines</string>
+    <string name="hint9">Oldest Civilisation</string>
+    <string name="hint10">Coldest Dessert in the world</string>
+
+
+
+    <string name="option11">Grand Canyon</string>
+    <string name="option21">Black Sea</string>
+    <string name="option31">Tonga Trench</string>
+    <string name="option41">Vatican City</string>
+    <string name="option51">It is located over two continents</string>
+    <string name="option61">Ireland</string>
+    <string name="option71">Congo River</string>
+    <string name="option81">Small Hills</string>
+    <string name="option91">Maya Civilization</string>
+    <string name="option101">Antarctic Dessert</string>
+
+
+    <string name="option12">Chichen Itza</string>
+    <string name="option22">Caribbean Sea</string>
+    <string name="option32">Philippine Trench</string>
+    <string name="option42">Monaco</string>
+    <string name="option52">It is the modern Capital of Turkey</string>
+    <string name="option62">Ireland</string>
+    <string name="option72">Amazon River</string>
+    <string name="option82">Brick Hills</string>
+    <string name="option92">Indus Valley</string>
+    <string name="option102">Arctic Dessert</string>
+
+    <string name="option13">Machu Pichu</string>
+    <string name="option23">Mediterranean Sea</string>
+    <string name="option33">Mariana Trench</string>
+    <string name="option43">Nauru</string>
+    <string name="option53">It is surrounded by Sea</string>
+    <string name="option63">Ireland</string>
+    <string name="option73">Nile River</string>
+    <string name="option83">Sand Hills</string>
+    <string name="option93">Harrappa</string>
+    <string name="option103">Greenland desert</string>
+
+    <string name="option14">Andes</string>
+    <string name="option24">Dead Sea</string>
+    <string name="option34">Puerto Rico Trench</string>
+    <string name="option44">Malta</string>
+    <string name="option54">It is one of the least densely populated area</string>
+    <string name="option64">Ireland</string>
+    <string name="option74">Ganges River</string>
+    <string name="option84">Chocolate Hills</string>
+    <string name="option94">Mohenjo Daro</string>
+    <string name="option104">Great Basin</string>
+</resources>

@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:alpha="0.7"
+        android:scaleType="fitXY"
+        android:src="@drawable/map"
+        />
+
+    <ScrollView
+        android:id="@+id/scroll_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <RelativeLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+            <com.budiyev.android.circularprogressbar.CircularProgressBar
+                android:id="@+id/progress_bar"
+                android:layout_width="@dimen/width17"
+                android:layout_height="@dimen/width17"
+                app:animateProgress="true"
+                app:backgroundStrokeColor="@color/colorWhite"
+                app:backgroundStrokeWidth="@dimen/width18"
+                app:drawBackgroundStroke="true"
+                app:foregroundStrokeCap="butt"
+                app:foregroundStrokeColor="@color/colorPink"
+                app:foregroundStrokeWidth="@dimen/width12"
+                app:indeterminate="false"
+                app:indeterminateRotationAnimationDuration="1200"
+                app:indeterminateSweepAnimationDuration="600"
+                app:indeterminateMinimumAngle="45"
+                app:maximum="100"
+                app:progress="80"
+                app:progressAnimationDuration="100"
+                app:startAngle="270"
+                android:layout_below="@id/result"
+                android:layout_margin="@dimen/width12"/>
+
+            <TextView
+                android:id="@+id/result"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/result"
+                android:textAppearance="?android:textAppearanceLarge"
+                android:textStyle="bold"
+                android:textSize="@dimen/width20"
+                android:layout_margin="@dimen/width16"
+                android:fontFamily="@font/slackey"
+                android:layout_centerInParent="true"
+                android:layout_alignParentTop="true"
+                android:textColor="@color/colorPink"/>
+
+
+
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Hi Priyanka"
+                android:textAppearance="?android:textAppearanceLarge"
+                android:textStyle="bold"
+                android:textSize="@dimen/width20"
+                android:layout_marginTop="@dimen/width12"
+                android:fontFamily="sans-serif-smallcaps"
+                android:layout_toRightOf="@id/progress_bar"
+                android:layout_below="@id/result"
+                android:textColor="@color/colorPink"/>
+            <TextView
+                android:id="@+id/display"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/comment"
+                android:textAppearance="?android:textAppearanceLarge"
+                android:textStyle="bold"
+                android:textSize="@dimen/width20"
+                android:layout_marginTop="5dp"
+                android:fontFamily="sans-serif-smallcaps"
+                android:layout_below="@id/name"
+                android:layout_toRightOf="@id/progress_bar"
+                android:textColor="@color/colorPink"/>
+
+            <TextView
+            android:id="@+id/result_details"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/your_score"
+            android:textAppearance="?android:textAppearanceLarge"
+            android:textStyle="bold"
+            android:textSize="@dimen/width20"
+            android:layout_marginTop="@dimen/width21"
+            android:fontFamily="sans-serif-smallcaps"
+            android:layout_marginLeft="@dimen/width18"
+            android:layout_below="@id/progress_bar"
+            android:textColor="@color/colorPink"/>
+            <TextView
+                android:id="@+id/score"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/marks"
+                android:textAppearance="?android:textAppearanceLarge"
+                android:textStyle="bold"
+                android:textSize="@dimen/width20"
+                android:layout_marginTop="@dimen/width12"
+                android:fontFamily="@font/julee"
+                android:layout_marginLeft="@dimen/width22"
+                android:layout_below="@id/result_details"
+                android:textColor="@color/colorPink"/>
+
+
+
+
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

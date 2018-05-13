@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="width1">0dp</dimen>
+    <dimen name="width2">12dp</dimen>
+    <dimen name="width3">4dp</dimen>
+    <dimen name="width12">20dp</dimen>
+    <dimen name="width11">8dp</dimen>
+    <dimen name="width5">2dp</dimen>
+    <dimen name="width9">16dp</dimen>
+    <dimen name="width10">16sp</dimen>
+    <dimen name="width4">18sp</dimen>
+    <dimen name="width6">8sp</dimen>
+    <dimen name="width7">50sp</dimen>
+    <dimen name="width8">24sp</dimen>
+    <dimen name="width13">20sp</dimen>
+    <dimen name="width15">3dp</dimen>
+    <dimen name="width14">120dp</dimen>
+    <dimen name="width16">5dp</dimen>
+    <dimen name="width17">150dp</dimen>
+    <dimen name="width18">10dp</dimen>
+    <dimen name="width19">50dp</dimen>
+    <dimen name="width20">30sp</dimen>
+    <dimen name="width21">40sp</dimen>
+    <dimen name="width22">80sp</dimen>
+</resources>
