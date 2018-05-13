@@ -19,6 +19,7 @@ import android.widget.ProgressBar;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import de.hdodenhof.circleimageview.CircleImageView;
 
@@ -96,22 +97,16 @@ public class QuizActivity extends AppCompatActivity {
             // The code in this method will be executed when the submit is clicked on.
             @Override
             public void onClick(View view) {
-                 d= correct*2;
-                 e= d-hintCount;
-                 f=(e/20.0)*100.0 ;
+
+                Toast.makeText(getApplicationContext(),"Generating Result..",
+                        Toast.LENGTH_SHORT).show();
+
                 score = (double)(((((correct)*2)-(hintCount))/20.0)*100.0);
-                //TextView tx =(TextView) findViewById(R.id.test);
-                //tx.setText((String.valueOf(score)));
+
                 // Create a new intent to open the {@link to QuizActivity
                 Intent startIntent = new Intent(QuizActivity.this, SubmitActivity.class);
 
-               // Bundle bundle=new Bundle();
-                //bundle.putInt("score_total",score);
 
-
-                //startIntent.putExtra("score_total",score);
-
-                //startIntent.putExtras(bundle);
 
 
                 // Start the new activity
@@ -150,18 +145,7 @@ public class QuizActivity extends AppCompatActivity {
 
     }
 
-   /* public void onEditTextClicked(View view) {
 
-        EditText edit =(EditText) findViewById(R.id.edit_text);
-        String text= edit.getText().toString();
-        if (text.equalsIgnoreCase(getResources().getString(quiz[count].getAnswer())))
-        {
-            //correct++;
-
-            TextView tx =(TextView) findViewById(R.id.test);
-            tx.setText(text);
-        }
-    }*/
 
     public void onHintClicked(View view)
     {
