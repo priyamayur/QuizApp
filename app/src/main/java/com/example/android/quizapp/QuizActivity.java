@@ -98,7 +98,7 @@ public class QuizActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
 
-                Toast.makeText(getApplicationContext(),"Generating Result..",
+                Toast.makeText(getApplicationContext(),"Generating Result...",
                         Toast.LENGTH_SHORT).show();
 
                 score = (double)(((((correct)*2)-(hintCount))/20.0)*100.0);
