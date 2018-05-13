@@ -70,8 +70,8 @@
                 android:id="@+id/name"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Hi Priyanka"
-                android:textAppearance="?android:textAppearanceLarge"
+                android:text="@string/hi"
+
                 android:textStyle="bold"
                 android:textSize="@dimen/width20"
                 android:layout_marginTop="@dimen/width12"
@@ -84,7 +84,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/comment"
-                android:textAppearance="?android:textAppearanceLarge"
+
                 android:textStyle="bold"
                 android:textSize="@dimen/width20"
                 android:layout_marginTop="5dp"

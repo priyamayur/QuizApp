@@ -11,7 +11,8 @@
     <string name="result">RESULTS</string>
     <string name="marks">80</string>
     <string name="your_score">Your Score is :</string>
-    <string name="comment">Thank you for participating</string>
+    <string name="hi">Hi Priyanka</string>
+     <string name="comment">Thank you for participating</string>
 
     <string name="app_name">Quiz</string>
     <string name="question1">Identify the Geographic Location</string>
